@@ -5,3 +5,7 @@ can_I_call_Viktor<- function(){
 }
 
 counter<-0
+
+counter_all<-read.csv("counter.csv")
+counter_all[1,1]<-counter_all[1,1]+1
+write.csv(counter_all,file = "counter.csv",row.names=F)

@@ -13,7 +13,8 @@ shinyUI(fluidPage(
     h1("Can I call Viktor?"),br(),br(),
      h3(textOutput("text1")),
     actionButton("call",label="Want to call again"),br(),br(),
-    textOutput("text2")
+    textOutput("text2"),br(),
+    textOutput("text3")
     )
     )
   )
